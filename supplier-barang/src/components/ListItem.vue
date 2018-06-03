@@ -45,7 +45,7 @@ export default {
     ]),
     deleteItem (id) {
       axios
-        .delete(`http://35.197.128.166/items/delete/${id}`, {
+        .delete(`https://vast-wave-38866.herokuapp.com/items/delete/${id}`, {
           headers: {
             token: localStorage.getItem('token')
           }

@@ -49,7 +49,7 @@ export default {
       let { username, password } = this
 
       axios
-        .post('http://35.197.128.166/login', {
+        .post('https://vast-wave-38866.herokuapp.com/login', {
           username,
           password
         })

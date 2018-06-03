@@ -52,7 +52,7 @@ export default {
       let { token } = this
 
       axios
-        .delete(`http://35.197.128.166/suppliers/delete/${id}`, {
+        .delete(`https://vast-wave-38866.herokuapp.com/suppliers/delete/${id}`, {
           headers: {
             token
           }

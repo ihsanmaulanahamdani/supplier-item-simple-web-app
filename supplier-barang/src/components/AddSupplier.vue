@@ -64,7 +64,7 @@ export default {
       let { code, name, address, phone, token } = this
 
       axios
-        .post('http://35.197.128.166/suppliers/add', {
+        .post('https://vast-wave-38866.herokuapp.com/suppliers/add', {
           code,
           name,
           address,
