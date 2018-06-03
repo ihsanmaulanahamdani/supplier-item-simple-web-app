@@ -20,7 +20,7 @@ export default new Vuex.Store({
   actions: {
     getAllSuppliers ({ commit }) {
       axios
-        .get('http://localhost:3000/suppliers', {
+        .get('http://35.197.128.166/suppliers', {
           headers: {
             token: localStorage.getItem('token')
           }
@@ -34,7 +34,7 @@ export default new Vuex.Store({
     },
     getAllItems ({ commit }) {
       axios
-        .get('http://localhost:3000/items', {
+        .get('http://35.197.128.166/items', {
           headers: {
             token: localStorage.getItem('token')
           }

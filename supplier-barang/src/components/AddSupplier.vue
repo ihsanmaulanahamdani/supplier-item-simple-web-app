@@ -64,7 +64,7 @@ export default {
       let { code, name, address, phone, token } = this
 
       axios
-        .post('http://localhost:3000/suppliers/add', {
+        .post('http://35.197.128.166/suppliers/add', {
           code,
           name,
           address,
@@ -75,10 +75,10 @@ export default {
           }
         })
         .then(({ data }) => {
-          code = ''
-          name = ''
-          address = ''
-          phone = ''
+          this.code = ''
+          this.name = ''
+          this.address = ''
+          this.phone = ''
           this.$router.push({ path: '/suppliers' })
           this.getAllSuppliers()
         })

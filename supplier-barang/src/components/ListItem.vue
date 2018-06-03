@@ -45,7 +45,7 @@ export default {
     ]),
     deleteItem (id) {
       axios
-        .delete(`http://localhost:3000/items/delete/${id}`, {
+        .delete(`http://35.197.128.166/items/delete/${id}`, {
           headers: {
             token: localStorage.getItem('token')
           }

@@ -84,7 +84,7 @@ export default {
       let { code, name, type, quantity, unit, supplier, token } = this
 
       axios
-        .post('http://localhost:3000/items/add', {
+        .post('http://35.197.128.166/items/add', {
           code,
           name,
           type,
@@ -97,12 +97,12 @@ export default {
           }
         })
         .then(({ data }) => {
-          code = ''
-          name = ''
-          type = ''
-          quantity = ''
-          unit = ''
-          supplier = ''
+          this.code = ''
+          this.name = ''
+          this.type = ''
+          this.quantity = ''
+          this.unit = ''
+          this.supplier = ''
           this.$router.push({ path: '/items' })
           this.getAllItems()
         })

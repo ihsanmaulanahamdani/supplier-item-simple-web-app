@@ -50,7 +50,7 @@ export default {
       let { supplierId, token, code, name, address, phone } = this
 
       axios
-        .put(`http://localhost:3000/suppliers/update/${supplierId}`, {
+        .put(`http://35.197.128.166/suppliers/update/${supplierId}`, {
           code,
           name,
           address,

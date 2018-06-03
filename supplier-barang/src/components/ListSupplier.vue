@@ -52,7 +52,7 @@ export default {
       let { token } = this
 
       axios
-        .delete(`http://localhost:3000/suppliers/delete/${id}`, {
+        .delete(`http://35.197.128.166/suppliers/delete/${id}`, {
           headers: {
             token
           }
