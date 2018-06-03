@@ -20,7 +20,7 @@ export default new Vuex.Store({
   actions: {
     getAllSuppliers ({ commit }) {
       axios
-        .get('http://35.197.128.166/suppliers', {
+        .get('https://vast-wave-38866.herokuapp.com/suppliers', {
           headers: {
             token: localStorage.getItem('token')
           }
@@ -34,7 +34,7 @@ export default new Vuex.Store({
     },
     getAllItems ({ commit }) {
       axios
-        .get('http://35.197.128.166/items', {
+        .get('https://vast-wave-38866.herokuapp.com/items', {
           headers: {
             token: localStorage.getItem('token')
           }
